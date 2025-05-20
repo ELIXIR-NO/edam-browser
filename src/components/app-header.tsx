@@ -2,6 +2,8 @@ import edamLogo from "/edam-logo.png";
 import { ThemeToggle } from "./theme-toggle";
 import { Link } from "lucide-react";
 import GitHub from "@/assets/svg/github";
+import { EdamVersionSelector } from "./edam-version-selector";
+import { EdamConceptSelector } from "./edam-concept-selector";
 
 export function AppHeader() {
 	return (
@@ -33,6 +35,11 @@ export function AppHeader() {
 						</li>
 					</li>
 				</ul>
+			</div>
+			<div className="flex flex-row gap-0">
+				<EdamVersionSelector />
+				<EdamConceptSelector />
+			</div>
 			<div className="ml-auto content-center">
 				<ThemeToggle />
 			</div>
