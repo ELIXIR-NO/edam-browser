@@ -33,6 +33,9 @@ export function AppHeader() {
 						</li>
 					</li>
 				</ul>
+			<div className="ml-auto content-center">
+				<ThemeToggle />
+			</div>
 		</nav>
 	);
 }
