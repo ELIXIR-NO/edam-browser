@@ -36,7 +36,7 @@ export function AppHeader() {
 					</li>
 				</ul>
 			</div>
-			<div className="flex flex-row gap-0">
+			<div className="flex flex-row items-center gap-0">
 				<EdamVersionSelector />
 				<EdamConceptSelector />
 			</div>
