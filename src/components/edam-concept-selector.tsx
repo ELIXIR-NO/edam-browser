@@ -29,8 +29,10 @@ export function EdamConceptSelector() {
 				</SelectGroup>
 				<SelectSeparator />
 				<SelectGroup>
-					<SelectItem value="deprecated">Only Deprecated </SelectItem>
-					<SelectItem value="all-deprecated">Only Deprecated </SelectItem>
+					<SelectItem value="deprecated">Only Deprecated</SelectItem>
+					<SelectItem value="all-deprecated">
+						All EDAM with Deprecated concepts
+					</SelectItem>
 				</SelectGroup>
 			</SelectContent>
 		</Select>
