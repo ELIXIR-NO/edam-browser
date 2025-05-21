@@ -1,9 +1,9 @@
 import edamLogo from "/edam-logo.png";
-import { ThemeToggle } from "./theme-toggle";
+import { ThemeToggle } from "@/components/theme-toggle";
 import { Link } from "lucide-react";
 import GitHub from "@/assets/svg/github";
-import { EdamVersionSelector } from "./edam-version-selector";
-import { EdamConceptSelector } from "./edam-concept-selector";
+import { EdamVersionSelector } from "@/components/edam-version-selector";
+import { EdamConceptSelector } from "@/components/edam-concept-selector";
 
 export function AppHeader() {
 	return (
