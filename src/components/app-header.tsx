@@ -4,6 +4,7 @@ import { Link } from "lucide-react";
 import GitHub from "@/assets/svg/github";
 import { EdamVersionSelector } from "@/components/edam-version-selector";
 import { EdamConceptSelector } from "@/components/edam-concept-selector";
+import { SearchBar } from "@/components/search-bar";
 
 export function AppHeader() {
 	return (
@@ -39,6 +40,14 @@ export function AppHeader() {
 			<div className="flex flex-row items-center gap-0">
 				<EdamVersionSelector />
 				<EdamConceptSelector />
+			</div>
+			<div className="place-content-center">
+				{/* TODO: replace the `onSelect` with a global state handling function */}
+				<SearchBar
+					options={[]}
+					placeholder="Search EDAM term"
+					onSelect={(option) => console.log("Selected: ", option)}
+				/>
 			</div>
 			<div className="ml-auto content-center">
 				<ThemeToggle />
